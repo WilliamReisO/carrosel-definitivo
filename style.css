@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.wrapper {
+  width: 100%;
+}
+.carrosel {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+.card {
+  line-height: 250px;
+  text-align: center;
+  color: rgba(246, 248, 249, 0);
+  font-size: 100px;
+  font-weight: 600;
+  margin: 20px 0;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.card.card-1 {
+  background: no-repeat;
+  background-image: url("https://source.unsplash.com/random/350x250/?cat");
+}
+.card.card-2 {
+  background: no-repeat;
+  background-image: url("https://source.unsplash.com/random/350x250/?cars");
+}
+.card.card-3 {
+  background: no-repeat;
+  background-image: url("https://source.unsplash.com/random/350x250/?bike");
+}
+.card.card-4 {
+  background: no-repeat;
+  background-image: url("https://source.unsplash.com/random/350x250/?street");
+}
+.card.card-5 {
+  background: no-repeat;
+  background-image: url("https://source.unsplash.com/random/350x250/?beer");
+}
+.owl-dots {
+  text-align: center;
+  margin-left: 10px;
+}
+.owl-dot {
+  border-radius: 10px;
+  height: 15px;
+  width: 45px;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #391313b0 !important;
+  margin: 0 10px;
+  transition: all o.3s ease;
+}
+.owl-dot:hover,
+.owl-dot.active {
+  background: #2e1717b0 !important;
+}
+
+/* primeira tentativa de carrosel  */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  max-width: 900px;
+  margin-top: 40px;
+  margin-left: 30vh;
+}
+
+.gallery-whapper {
+  overflow-x: auto;
+  -ms-overflow-style: none;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  gap: 18px;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  border: none;
+  opacity: 0.1;
+  background: linear-gradient(to left, transparent 0%, black 200%);
+}
+
+.arrow-right {
+  left: auto;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.item {
+  width: 600px;
+  height: 600px;
+  flex-shrink: 0;
+  opacity: 0.7;
+  transition: all 3ms ease-in-out;
+}
+
+.current-Item {
+  opacity: 1;
+}
+@media (max-width:600px) {
+  .card.card-1 {
+    background: no-repeat;
+    background-image: url("https://source.unsplash.com/random/522x250/?cat");
+  }
+  .card.card-2 {
+    background: no-repeat;
+    background-image: url("https://source.unsplash.com/random/522x250/?cars");
+  }
+  .card.card-3 {
+    background: no-repeat;
+    background-image: url("https://source.unsplash.com/random/522x250/?bike");
+  }
+  .card.card-4 {
+    background: no-repeat;
+    background-image: url("https://source.unsplash.com/random/522x250/?street");
+  }
+  .card.card-5 {
+    background: no-repeat;
+    background-image: url("https://source.unsplash.com/random/522x250/?beer");
+  }
+}
+@media (max-width:400px) {
+  .card.card-1 {
+    background: no-repeat;
+    background-image: url("https://source.unsplash.com/random/350x250/?cat");
+  }
+  .card.card-2 {
+    background: no-repeat;
+    background-image: url("https://source.unsplash.com/random/350x250/?cars");
+  }
+  .card.card-3 {
+    background: no-repeat;
+    background-image: url("https://source.unsplash.com/random/350x250/?bike");
+  }
+  .card.card-4 {
+    background: no-repeat;
+    background-image: url("https://source.unsplash.com/random/350x250/?street");
+  }
+  .card.card-5 {
+    background: no-repeat;
+    background-image: url("https://source.unsplash.com/random/350x250/?beer");
+  }
+}
