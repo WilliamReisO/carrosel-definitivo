@@ -1,2 +1,2 @@
-# carrosel-definitivo
-dessa vez não vou esquecer mais 
+# guia-carrosel-definitivo
+Não vou esquecer mais nesse carrosel 
