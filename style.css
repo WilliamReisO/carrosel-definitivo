@@ -8,6 +8,7 @@ body {
   display: flex;
   align-items: center;
   min-height: 100vh;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(19, 231, 235) 0.1%, rgb(26, 70, 82) 94.2% ) !important;
 }
 .wrapper {
   width: 100%;
@@ -18,7 +19,7 @@ body {
   padding: 0 30px;
 }
 .card {
-  line-height: 250px;
+  line-height: 450px;
   text-align: center;
   color: rgba(246, 248, 249, 0);
   font-size: 100px;
@@ -29,23 +30,23 @@ body {
 }
 .card.card-1 {
   background: no-repeat;
-  background-image: url("https://source.unsplash.com/random/350x250/?cat");
+  background-image: url("https://source.unsplash.com/random/400x450/?cat");
 }
 .card.card-2 {
   background: no-repeat;
-  background-image: url("https://source.unsplash.com/random/350x250/?cars");
+  background-image: url("https://source.unsplash.com/random/400x450/?cars");
 }
 .card.card-3 {
   background: no-repeat;
-  background-image: url("https://source.unsplash.com/random/350x250/?bike");
+  background-image: url("https://source.unsplash.com/random/400x450/?bike");
 }
 .card.card-4 {
   background: no-repeat;
-  background-image: url("https://source.unsplash.com/random/350x250/?street");
+  background-image: url("https://source.unsplash.com/random/400x450/?street");
 }
 .card.card-5 {
   background: no-repeat;
-  background-image: url("https://source.unsplash.com/random/350x250/?beer");
+  background-image: url("https://source.unsplash.com/random/400x450/?beer");
 }
 .owl-dots {
   text-align: center;
@@ -131,47 +132,48 @@ body {
 .current-Item {
   opacity: 1;
 }
+
 @media (max-width:600px) {
   .card.card-1 {
     background: no-repeat;
-    background-image: url("https://source.unsplash.com/random/522x250/?cat");
+    background-image: url("https://source.unsplash.com/random/522x450/?cat");
   }
   .card.card-2 {
     background: no-repeat;
-    background-image: url("https://source.unsplash.com/random/522x250/?cars");
+    background-image: url("https://source.unsplash.com/random/522x450/?cars");
   }
   .card.card-3 {
     background: no-repeat;
-    background-image: url("https://source.unsplash.com/random/522x250/?bike");
+    background-image: url("https://source.unsplash.com/random/522x450/?bike");
   }
   .card.card-4 {
     background: no-repeat;
-    background-image: url("https://source.unsplash.com/random/522x250/?street");
+    background-image: url("https://source.unsplash.com/random/522x450/?street");
   }
   .card.card-5 {
     background: no-repeat;
-    background-image: url("https://source.unsplash.com/random/522x250/?beer");
+    background-image: url("https://source.unsplash.com/random/522x450/?beer");
   }
 }
 @media (max-width:400px) {
   .card.card-1 {
     background: no-repeat;
-    background-image: url("https://source.unsplash.com/random/350x250/?cat");
+    background-image: url("https://source.unsplash.com/random/350x450/?cat");
   }
   .card.card-2 {
     background: no-repeat;
-    background-image: url("https://source.unsplash.com/random/350x250/?cars");
+    background-image: url("https://source.unsplash.com/random/350x450/?cars");
   }
   .card.card-3 {
     background: no-repeat;
-    background-image: url("https://source.unsplash.com/random/350x250/?bike");
+    background-image: url("https://source.unsplash.com/random/350x450/?bike");
   }
   .card.card-4 {
     background: no-repeat;
-    background-image: url("https://source.unsplash.com/random/350x250/?street");
+    background-image: url("https://source.unsplash.com/random/350x450/?street");
   }
   .card.card-5 {
     background: no-repeat;
-    background-image: url("https://source.unsplash.com/random/350x250/?beer");
+    background-image: url("https://source.unsplash.com/random/350x450/?beer");
   }
 }
